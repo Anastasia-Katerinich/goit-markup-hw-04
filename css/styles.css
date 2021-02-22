@@ -462,6 +462,11 @@ footer {
   background-color: var(--lightblack);
 }
 
+.container.adr {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-adr {
   margin-right: 70px;
 }
@@ -558,7 +563,7 @@ footer {
 }
 
 .sub-links-item a:hover,
-.ssub-links-item a:focus {
+.sub-links-item a:focus {
   color: var(--white-text);
   background-color: var(--blue-text);
   border-radius: 100px;
