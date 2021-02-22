@@ -159,14 +159,6 @@ ul {
 
 /* "ГЕРОЙ" */
 
-/* .overlay {
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
- 
-} */
-
 .hero {
   max-width: 1600px;
   height: 600px;
@@ -175,7 +167,12 @@ ul {
   margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(../images/img-hero.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -376,6 +373,7 @@ ul {
   color: var(--icons);
   width: 44px;
   height: 44px;
+  color: var(--graphite-text);
 }
 
 .item-social-network a:hover,
