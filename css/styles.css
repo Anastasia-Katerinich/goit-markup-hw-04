@@ -86,7 +86,6 @@ ul {
 .list-nav {
   display: flex;
   align-items: center;
-  padding: 32px 0;
 }
 
 .link {
@@ -108,13 +107,17 @@ ul {
   margin-right: 50px;
 }
 
+.item-ref {
+  padding: 32px 0;
+}
+
 .list-data {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.item-data {
+.item-data:not(:last-child) {
   margin-right: 50px;
 }
 
