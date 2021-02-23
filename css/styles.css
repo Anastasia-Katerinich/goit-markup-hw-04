@@ -8,7 +8,8 @@
   --grey: #f5f4fa;
   --darkblack: #000000;
   --border-color: #ececec;
-  --regular-guest: #afb1b8;
+  --network-client: #afb1b8;
+  --back-circle:rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -132,7 +133,8 @@ ul {
 }
 
 .link-mail {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -141,7 +143,8 @@ ul {
 }
 
 .link-tel {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
   font-weight: 500;
   font-size: 14px;
@@ -241,11 +244,18 @@ ul {
   justify-content: center;
 }
 
-.features-cards {
-  display: block;
+.features-icon {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 100px;
+}
+
+.features-cards {
+  display: flex;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  justify-content: center;
   margin-bottom: 30px;
   background-color: var(--grey);
 }
@@ -362,21 +372,18 @@ ul {
 }
 
 .list-social-network {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 206px;
-  height: 44px;
 }
 
 .item-social-network a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--icons);
   width: 44px;
   height: 44px;
-  color: var(--graphite-text);
+  color: var(--network-client);
 }
 
 .item-social-network a:hover,
@@ -430,10 +437,10 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--graphite-text);
+  color: var(--network-client);
   width: 170px;
   height: 90px;
-  border: 1px solid var(--regular-guest);
+  border: 1px solid var(--network-client);
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -445,8 +452,6 @@ ul {
 }
 
 .regular-guest-icon {
-  display: flex;
-  align-items: center;
   fill: currentColor;
 }
 
@@ -559,7 +564,7 @@ footer {
   width: 44px;
   height: 44px;
   color: var(--white-text);
-  background-color: var(--lightblack);
+  background-color: var(--back-circle);
   border-radius: 100px;
 }
 
@@ -583,7 +588,7 @@ footer {
 /* ПОРТФОЛИО */
 
 .header-menu {
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .directions {
@@ -624,6 +629,14 @@ footer {
 .btn:focus {
   background-color: var(--blue-text);
   color: var(--white-text);
+}
+
+.item-catalog:hover,
+.item-catalog:focus  {
+ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+ 0px 1px 2px rgba(0, 0, 0, 0.08),
+ 0px 2px 2px rgba(0, 0, 0, 0.12);
+ cursor: pointer;
 }
 
 .visually-hidden {
